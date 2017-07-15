@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/my/info",
+    "pages/my/list",
+    "pages/my/fav",
+    "pages/my/mydyn",
+    "pages/info/index",
+    "pages/info/add",
+    "pages/info/edit",
+    "pages/dynamic/index",
+    "pages/dynamic/add",
+    "pages/comment/index",
+    "pages/notice/index",
+    "pages/msg/index",
+    "pages/msg/list",
+    "pages/my/appointment",
+    "pages/appointment/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f4de3b",
+    "navigationBarTitleText": "同城拼车",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#ddc40b",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "拼车",
+        "iconPath": "img/auto.png",
+        "selectedIconPath": "img/auto1.png"
+      },
+      {
+        "pagePath": "pages/dynamic/index",
+        "text": "动态",
+        "iconPath": "img/favorite.png",
+        "selectedIconPath": "img/favorite1.png"
+      },
+      {
+        "pagePath": "pages/msg/index",
+        "text": "消息",
+        "iconPath": "img/comments.png",
+        "selectedIconPath": "img/comments1.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "img/account.png",
+        "selectedIconPath": "img/account1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

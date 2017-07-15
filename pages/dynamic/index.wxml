@@ -1,0 +1,41 @@
+<view class="page">
+<view id="main">
+    <view id="list">
+        <view wx:for="{{list}}" wx:for-index="idx" wx:for-item="item" class="list_item">
+            <view>
+                <view class="po-avt-wrap">
+                    <image class="po-avt data-avt" src="{{item.avatarUrl}}" ></image>
+                </view>
+                <view class="po-cmt">
+                    <view class="po-hd">
+                        <view class="po-name"><text class="data-name">{{item.nickName}}</text></view>
+                        <view class="post">
+                            <view>{{item.content}}</view>
+                            <view>
+                                <image wx:for="{{item.img}}" bindtap="previeimg" wx:for-item="res" class="list-img" data-name="{{idx}}" id="{{res}}" src="{{res}}" style="height: 80px;"></image>
+                            </view>
+                        </view>
+                        <view class="time">{{item.time}}</view><image class="c-icon" id="{{idx}}" src="/img/c.png" bindtap="seecomment"></image>
+                    </view>
+                    <view class="r" wx:if="{{item.comments}}"></view>
+                    <view class="cmt-wrap">
+                        <view class="cmt-list">
+                            <view wx:for="{{item.comments}}" bindtap="seecomment" id="{{idx}}" data-name="{{comment.nickName}}" wx:for-item="comment" hover-class="comment_hover" style="color:#000;">
+                                <text>{{comment.nickName}}<text style="color:#000;margin:0px 2px;" wx:if="{{comment.reply}}">回复</text>{{comment.reply}}:</text>{{comment.content}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>
+<view class="add" bindtap="add">
+<image src="/img/adddy.png"></image>
+</view>
+
+<view class="comment" wx:if="{{seecomment}}">
+<input  bindconfirm="comment" bindblur="hidecomment" placeholder="{{reply}}" focus auto-height="true" fixed="true" cursor-spacing="10" confirm-type="done"/>
+</view>
+</view>

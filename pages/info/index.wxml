@@ -1,0 +1,139 @@
+<scroll-view scroll-y="true" style="height: {{height}}px" scroll-into-view="{{toview}}" bindscrolltolower="tobottom" scroll-top="0">
+<view class="page">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{errorMsg}}</view>
+    <view class="page__bd header">
+        <view class="head">
+            <image src="{{data.avatarUrl}}"></image>
+        </view>
+        <view class="username">
+            {{data.nickName}}
+        </view>
+        <view class="add" wx:if="{{data.type == 1}}" wx:if="{{notme}}" bindtap="madal">
+            <button type="mini"><image src="/img/add.png" class="icon-add"></image>预约</button>
+        </view>
+    </view>
+
+    <view class="page__bd content">
+        <view class="p">
+            <image src="/img/cle1.png" class="icon icon-departure"></image><text>{{data.departure}}</text>
+        </view>
+        <view class="p">
+            <image src="/img/cle.png" class="icon icon-departure"></image><text>{{data.destination}}</text>
+        </view>
+        <view class="p contact">
+            <text class="tit">联系人:</text><text>{{data.name}}</text>
+            <image wx:if="{{data.gender > 0}}" src="/img/{{data.gender}}.png" class="icon icon-gender"></image>
+            <image src="/img/tel.png" class="icon icon-tel" bindtap="tel"></image>
+        </view>
+        <view class="p contact">
+            <text class="tit">出发时间:</text><text>{{data.tm}}</text>
+        </view>
+        <view class="p contact" wx:if="{{data.type == 1}}">
+            <text class="tit">拼车价格:</text><text>{{data.price}}</text>
+        </view>
+        <view class="p contact">
+            <text wx:if="{{data.type == 1}}" class="tit">剩余空位:</text><text wx:elif="{{data.type == 2}}" class="tit">人数:</text><text>{{data.surplus}}</text>
+        </view>
+        <view class="p contact" wx:if="{{data.type == 1}}">
+            <text class="tit">车型:</text><text>{{data.vehicle}}</text>
+        </view>
+        <view class="p contact">
+            <text class="tit">备注:</text>
+        </view>
+        <view class="p remark">
+            {{data.remark}}
+        </view>
+
+    </view>
+
+    <view id="comment_list">
+        <view class="comment_list_header">全部评论({{comnum}})</view>
+        <view class="list">
+        <view class="nocomment" wx:if="{{comnum == 0}}">
+            暂无评论
+        </view>
+            <view class="item" wx:for="{{comment}}" wx:for-index="idx" wx:key="k">
+                <view class="left">
+                    <image src="{{item.avatarUrl}}"></image>
+                </view>
+                <view class="com_main">
+                    <view class="name">
+                        {{item.nickName}}
+                    </view>
+                    <view class="text">
+                        {{item.content}}
+                        <image wx:for="{{item.img}}" wx:for-item="res" wx:for-index="idxx" wx:key="i"  src="{{res}}" data-iid="{{idx}}" data-id="{{idxx}}" mode="aspectFit"  bindtap="previmg"></image>
+                        <view class="reply" wx:if="{{item.reply}}">{{item.reply}}</view>
+                    </view>
+                    <view class="info">
+                        <text>{{item.time}}</text>
+                        <navigator url="/pages/comment/index?id={{data.id}}&reply={{item.nickName}}:{{item.content}}"><view class="zview"><image src="/img/msg1.png"></image><text>回复</text></view></navigator>                        
+                        <view wx:if="{{item.iszan}}" class="zview" bindtap="zan" id="{{idx}}"><image src="/img/zan1.png"></image><text>{{item.zan}}</text></view>
+                        <view wx:if="{{!item.iszan}}" class="zview" bindtap="zan" id="{{idx}}"><image src="/img/zan.png"></image><text>{{item.zan}}</text></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+    <view class="page__bd">
+        <view class="weui-loadmore" bindtap="onReachBottom" wx:if="{{!nomore}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{nomore}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多了~</view>
+        </view>
+    </view>
+    </view>
+
+    
+</view>
+</scroll-view>
+
+<view class="back" wx:if="{{back}}" bindtap="toIndex">
+    <image src="/img/back.png"></image>
+</view>
+
+<view class="footer">
+    <navigator url="/pages/comment/index?id={{data.id}}"><view class="comment">发表评论</view></navigator>
+    <view class="ft-icon"><view class="tocomment" bindtap="tocomment"><image src="/img/msg.png" class="msg"></image><text class="comnum">{{comnum}}</text></view><image wx:if="{{!shoucang}}" src="/img/shoucang.png" class="shoucang" bindtap="shoucang"></image><image wx:if="{{shoucang}}" bindtap="qxshoucang" src="/img/shoucang1.png" class="shoucang"></image></view>
+</view>
+
+<modal class="modal" hidden="{{!modalFlag}}" title="申请预约" no-cancel bindconfirm="modalOk" confirmText="不了，我再看看">  
+    <view class="dew">  
+      <form report-submit="true" bindsubmit="appointment">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="name" value="{{userInfo.name}}" placeholder="请填写姓名"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number"  name="phone" value="{{userInfo.phone}}" placeholder="请输入手机号" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">乘车人数</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="selector"  name="surplus" value="{{surplus}}" range="{{Surpluss}}" bindchange="setsurplus">
+                        <view class="weui-input">{{Surpluss[surplus]}}</view>
+                    </picker>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            
+            <button class="weui-btn" type="primary" formType="submit">确定</button>
+
+        </view>
+      </form> 
+</view>  
+</modal>

@@ -1,0 +1,65 @@
+.page{background: #f5f5f5;}
+.header{border-bottom:1px solid #eee;height:130rpx;background: #fff;padding:5px 10px 0px 10px;}
+.head{width: 100rpx;height: 100rpx;border-radius: 50%;overflow: hidden;border: 1px solid #f4de3b;float: left;margin:5rpx 10rpx;}
+.head image{width:100%;height:100%;}
+.username{float:left;line-height: 110rpx;font-size:.75rem;}
+.icon-add{width:20rpx;height: 20rpx;}
+.add{float:right;}
+.add button{background: #000;color:#fff;width: 120rpx;font-size:.82rem;height:50rpx;padding:10rpx;line-height: 30rpx;border-radius: 10rpx;margin-top: 40rpx;}
+
+.content{clear:both;margin-top: 20rpx;background: #fff;padding:5px 10px 40px 10px;}
+.p{position: relative;}
+.icon{width:50rpx;height: 50rpx;margin:10rpx;position:absolute}
+.p text{margin-left:60rpx;font-size:.9rem;}
+.icon-tel{width:60rpx;height: 60rpx;margin-left:50rpx;}
+.contact text{font-size:.94rem;line-height: 80rpx;margin: 20rpx;}
+.tit{color:#000;}
+.icon-gender{width:30rpx;height: 30rpx;top: 16rpx;}
+.tocomment{width:100rpx;float:left}
+
+.footer{position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    display: table;
+    width: 100%;
+    height: 60rpx;
+    padding: 0.1375rem 0;
+    background-color: #f5f5f5;
+    border-top: solid #d7d7d7 0.0625rem;}
+.comment{display: block;
+    margin: 0 0.25rem 0 0.5rem;
+    padding: 0.2375rem;
+    color: #888;
+    font-size:.70rem;
+    background-color: #fff;
+    border: solid #e9e9e9 1px;
+    border-radius: 0.125rem;width:550rpx;float: left}
+
+.footer image{width:40rpx;height: 40rpx;margin:10rpx;}
+.ft-icon{position: relative;}
+.msg{position: absolute;right:100rpx}
+.shoucang{position: absolute;right:10rpx;}
+.comnum{position: absolute;right:80rpx;margin-left:80rpx;color:darkred}
+.remark{margin: 20rpx; font-size: .78rem;}
+
+#comment_list{margin-top:10px;background: #fff;padding-bottom: 60px;}
+#comment_list .comment_list_header{font-size:.78rem;padding:5px 10px;border:1px solid #eee;}
+#comment_list .list .item .left{width:140rpx;height:140rpx;float:left;}
+#comment_list .list .item .left image{width:80rpx;height:80rpx;border-radius: 50%;margin:10px;border:1px solid #f4de3b}
+#comment_list .list .item{border-bottom:1px solid #eee;overflow:hidden;}
+#comment_list .list .item .com_main{width:600rpx;float:left;margin-top:40rpx;font-size:.8rem;padding-bottom: 10rpx;}
+#comment_list .list .item .com_main .text{color:#222;margin-top:10rpx;}
+#comment_list .list .item .com_main .info{padding: 5rpx;}
+#comment_list .list .item .com_main .info text{font-size: .7rem!important;float:left;}
+#comment_list .list .item .com_main .info image{width:16px;height:16px;position:absolute;left:-40rpx;top:6rpx;}
+#comment_list .list .item .com_main .info .zview{position: relative; min-width:15px;}
+#comment_list .list .item .com_main .info view{float: right;margin:0px 30rpx;}
+#comment_list .list .item .com_main image{max-width: 98%;margin-right:2%;}
+#comment_list .list{min-height: 300px;}
+#comment_list .list .nocomment{text-align: center;line-height: 200px;}
+#comment_list .list .reply{background: #f5f5f5;width:90%;padding:5px 2%;margin-left:3px;color:#000;}
+
+.back{position: fixed;top:70px;left:0px;background: rgba(0, 0, 0, 0.5);padding:9px 20px 5px 10px;border-bottom-right-radius:2em;border-top-right-radius:2em;}
+.back image{width:20px;height: 20px;}
+.weui-input{overflow: hidden}

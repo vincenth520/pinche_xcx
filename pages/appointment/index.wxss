@@ -1,0 +1,12 @@
+/* pages/info/add.wxss */
+.page{background: #efefef;height: 560px;}
+.weui-cells__title{padding-top:.3rem;margin-top:0;}
+.radio-group{padding: 10px 0px !important;}
+/* .StartAndStop input{width:70px;float:left}
+.to1{width: 30px;height:30px;position:absolute;top:6px;}
+.stop{margin-left:40px;}*/
+.weui-label{color:black}
+.radio text{margin:0rpx 8rpx;}
+.radio{margin-right: 12rpx;}
+.submit{background: #f4de3b!important;color:#000!important;}
+.weui-input{overflow:hidden;}

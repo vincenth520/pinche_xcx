@@ -1,0 +1,61 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{errorMsg}}</view>
+
+        <form bindsubmit="formSubmit" report-submit="true">
+            <view class="weui-cells__title">联系人信息</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">姓名</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" type="text" name="name" value="{{data.name}}" disabled="true" placeholder="请输入姓名"/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">手机号</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="phone" maxlength="11" value="{{data.phone}}" disabled="true" type="number" placeholder="请输入手机号"/>
+                    </view>
+                </view>
+            </view>
+        
+            <view class="weui-cells__title">拼车信息</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input StartAndStop">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">出发地</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input" bindtap="sexDeparture">{{data.departure}}</view>                 
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input StartAndStop">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">目的地</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view class="weui-input stop" bindtap="sexDestination">{{data.destination}}</view>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">出发时间</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="phone" maxlength="11" value="{{data.time}}" type="number" disabled="true"/>
+                    </view>
+                </view>               
+        </view>
+
+        <view class="weui-btn-area" wx:if="{{data.status == 0}}">
+            <button class="weui-btn submit" type="primary" bindtap="yes" formType="submit">同意拼车</button>
+            <button class="weui-btn " type="normal" bindtap="no" formType="submit">拒绝拼车</button>
+        </view>
+
+        </form>
+    </view>
+</view>

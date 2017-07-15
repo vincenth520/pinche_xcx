@@ -1,0 +1,2 @@
+.list view{font-size:12pt;}
+.list .weui-cell{padding: 15px !important}

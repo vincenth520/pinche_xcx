@@ -1,0 +1,99 @@
+<view class="page">
+ <!--页头-->
+ <view class="page__hd">
+  <view class="head">
+    <input bindblur="getstart" value="{{start}}" placeholder="始发地" type="text" />
+    <image src="/img/to.png" class="to"></image>
+    <input bindblur="getover" value="{{over}}" placeholder="目的地" auto-focus/>
+    <image src="/img/date.png" class="dateImg"></image>
+    <picker mode="date" value="{{date}}" class="date" start="{{minday}}" end="{{maxday}}" bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+  </view>
+ </view>
+ <!--主体-->
+ <view class="page__bd"> 
+  <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                    
+                    <view class="weui-panel__bd">
+                        <navigator wx:for="{{list}}" wx:for-index="idx" wx:key="k" wx:for-item="item" url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                                <image class="weui-media-box__thumb" src="{{item.avatarUrl}}" ></image>
+                            </view>
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                                <view class="weui-media-box__title list_title"><text class="list_start">{{item.start}}</text> <image src="/img/to.png" class="to1"></image> <text class="list_over">{{item.over}}</text><text class="list_tm">{{item.tm}}</text></view>
+                                <view class="weui-media-box__desc list_desc">出发：{{item.date}} {{item.time}}</view>
+                                <view class="weui-media-box__info">
+                                    <view class="weui-media-box__info__meta list_type_{{item.tp}}">{{item.type}}</view>
+                                    <view class="weui-media-box__info__meta"><image src="/img/people.png" class="list_icon"></image><text>{{item.surplus}}</text></view>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <view class="weui-panel__bd">
+                        <navigator wx:for="{{list1}}" wx:for-index="idx" wx:key="k" wx:for-item="item" url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                                <image class="weui-media-box__thumb" src="{{item.avatarUrl}}" />
+                            </view>
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                                <view class="weui-media-box__title list_title"><text class="list_start">{{item.start}}</text> <image src="/img/to.png" class="to1"></image> <text class="list_over">{{item.over}}</text><text class="list_tm">{{item.tm}}</text></view>
+                                <view class="weui-media-box__desc list_desc">出发：{{item.date}} {{item.time}}</view>
+                                <view class="weui-media-box__info">
+                                    <view class="weui-media-box__info__meta list_type_{{item.tp}}">{{item.type}}</view>
+                                    <view class="weui-media-box__info__meta"><image src="/img/people.png" class="list_icon"></image><text>{{item.surplus}}</text></view>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                    <view class="weui-panel__bd">
+                        <navigator wx:for="{{list2}}" wx:for-index="idx" wx:key="k" wx:for-item="item" url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                                <image class="weui-media-box__thumb" src="{{item.avatarUrl}}" />
+                            </view>
+                            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                                <view class="weui-media-box__title list_title"><text class="list_start">{{item.start}}</text> <image src="/img/to.png" class="to1"></image> <text class="list_over">{{item.over}}</text><text class="list_tm">{{item.tm}}</text></view>
+                                <view class="weui-media-box__desc list_desc">出发：{{item.date}} {{item.time}}</view>
+                                <view class="weui-media-box__info">
+                                    <view class="weui-media-box__info__meta list_type_{{item.tp}}">{{item.type}}</view>
+                                    <view class="weui-media-box__info__meta"><image src="/img/people.png" class="list_icon"></image><text>{{item.surplus}}</text></view>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+ </view>
+<view class="page__bd">
+    <view class="weui-loadmore" bindtap="onReachBottom" wx:if="{{!nomore}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+    <view class="weui-loadmore weui-loadmore_line" wx:if="{{nomore}}">
+        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多了~</view>
+    </view>
+</view>
+</view>
+
+<navigator url="/pages/info/add">
+    <view class="add" bindtap="add">
+    <image src="/img/adddy.png"></image>
+    </view>
+</navigator>

@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="title">{{data.title}}</view>
+    <text class="content">
+        {{data.content}}
+    </text>
+</view>

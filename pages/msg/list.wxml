@@ -1,0 +1,27 @@
+<view class="page">
+ <!--主体-->
+ <view class="page__bd"> 
+
+  <view id="main">
+    <view id="list">
+        <view wx:for="{{msg}}" wx:for-index="idx" wx:for-item="item" class="list_item">
+            <navigator url="{{item.url}}">
+                <view class="po-avt-wrap">
+                    <image class="po-avt data-avt" src="{{item.avatarUrl}}" ></image>
+                </view>
+                <view class="po-cmt">
+                    <view class="po-hd">
+                        <view class="po-name"><text class="data-name">{{item.nickName}}</text><text style="float:right;">{{item.time}}</text></view>
+                        <view class="post">
+                            <view>{{item.content}}</view>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+</view>
+ </view>
+ <!--没有页脚-->
+</view>
