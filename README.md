@@ -10,6 +10,8 @@
 
 寻车，达成，寻同路人，拼车出行，绿色环保，本项目的目的是为了方便同程出行的用户，车主乘客自主发布拼车信息，并实现自能预约通知，使拼车更加方便快捷。
 
+`因涉及到账号资质问题，此小程序并没有上线`
+
 
 - 前端代码地址：[https://github.com/vincenth520/pinche_xcx](https://github.com/vincenth520/pinche_xcx)
 - 后端代码地址：[https://github.com/vincenth520/pinche_xcx_data](https://github.com/vincenth520/pinche_xcx_data)
