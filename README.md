@@ -24,7 +24,7 @@
 
 ## 项目截图
 
-[点击查看项目截图](http://7xr6xf.com1.z0.glb.clouddn.com/pinche.gif)
+[点击查看项目截图](http://cloud.video.taobao.com/play/u/1798224346/p/1/e/6/t/1/50014580198.mp4)
 
 
 
