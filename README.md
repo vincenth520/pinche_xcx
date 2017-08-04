@@ -31,7 +31,7 @@
 
 
 ## 有问题
-你可以用以下联系方式找到我(`不接受问问题,有问题请直接提交[issue](https://github.com/vincenth520/pinche_xcx/issues)`)
+你可以用以下联系方式找到我(`不接受问问题,有问题请直接提交`[issue](https://github.com/vincenth520/pinche_xcx/issues))
 
 (点击链接加入群【微信小程序开发交流】：https://jq.qq.com/?_wv=1027&k=4Em0dwJ)
 
