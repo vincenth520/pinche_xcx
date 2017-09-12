@@ -81,6 +81,7 @@ function getDateDiff(dateTimeStamp){
 	var dayC =diffValue/day;
 	var hourC =diffValue/hour;
 	var minC =diffValue/minute;
+  var result = '';
 	if(monthC>=1){
 		result="" + parseInt(monthC) + "月后";
 	}
@@ -113,7 +114,8 @@ function getDateBiff(dateTimeStamp){
 	var weekC =diffValue/(7*day);
 	var dayC =diffValue/day;
 	var hourC =diffValue/hour;
-	var minC =diffValue/minute;
+  var minC = diffValue / minute;
+  var result = '';
 	if(monthC>=1){
 		result="" + parseInt(monthC) + "月前";
 	}
