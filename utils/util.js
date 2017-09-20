@@ -14,9 +14,16 @@ function formatNumber(n) {
   n = n.toString()  
   return n[1] ? n : '0' + n  
 }  
+
   
-var rootDocment = 'https://xcx.codems.cn/api/';  
-function req(url,data,cb){  
+var rootDocment = 'https://xcx.codems.cn/api/';
+  
+//修改成你的appid及appsecret
+var AppConf = {'appid':'wx0aa456241abc9e8e', 'appsecret':'76b24dc34ae91aa5fe89b7dc4413e981'};
+
+function req(url, data, cb) {
+  data.appid = AppConf.appid;
+  data.appsecret = AppConf.appsecret; 
     wx.request({  
       url: rootDocment + url,  
       data: data,  
@@ -31,10 +38,12 @@ function req(url,data,cb){
     })  
 }  
   
-function getReq(url,data,cb){  
+function getReq(url,data,cb){ 
+    data.appid = AppConf.appid;
+    data.appsecret = AppConf.appsecret;
     wx.request({  
-      url: rootDocment + url,  
-      data: data,  
+      url: rootDocment + url,
+      data: data, 
       method: 'get',  
       header: {'Content-Type':'application/x-www-form-urlencoded'},  
       success: function(res){  

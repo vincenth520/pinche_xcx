@@ -1,4 +1,5 @@
 //app.js
+var util = require('utils/util.js');
 App({
 
   onLaunch: function () {
@@ -10,21 +11,12 @@ App({
             key: 'sk',
             success: function(res) {
                 var sk = res.data;
-                wx.request({
-                  url: 'https://xcx.codems.cn/api/user/vaild_sk',
-                  data: {
-                    "sk":sk
-                  },
-                  method: 'POST', 
-                  header: {'Content-Type':'application/x-www-form-urlencoded'},
-                  success:function(data){
-                    if(data.data.status == 1){
-                      that.globalData.sk = sk;
-                    }else{
-                      that.login();
-                      return;
-                    }
-                    
+                util.req('user/vaild_sk', { "sk": sk }, function (data) {
+                  if (data.status == 1) {
+                    that.globalData.sk = sk;
+                  } else {
+                    that.login();
+                    return;
                   }
                 })
             },
@@ -58,23 +50,13 @@ App({
       success: function (res) {
         wx.getUserInfo({
           success: function(userinfo){
-            wx.request({
-              url: 'https://xcx.codems.cn/api/user/login',
-              data: {
-                "code":res.code,
-                "encryptedData":userinfo.encryptedData,
-                "iv":userinfo.iv
-              },
-              method: 'POST', 
-              header: {
-                'Content-type':'application/json'
-              },
-              success:function(data){
-                data = data.data;
-                console.log(data);
-                that.setUserInfo(data.user);
-                that.setSk(data.sk);
-              }
+            util.req('user/login', {
+              "code": res.code,
+              "encryptedData": userinfo.encryptedData,
+              "iv": userinfo.iv
+               }, function (data) {
+                 that.setUserInfo(data.user);
+                 that.setSk(data.sk);
             })
           },
           fail: function(res) {
