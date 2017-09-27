@@ -27,6 +27,11 @@
 [点击查看项目截图](http://cloud.video.taobao.com/play/u/1798224346/p/1/e/6/t/1/50014580198.mp4)
 
 
+## 使用教程
+
+- [拼车小程序无需后台的搭建示例](https://github.com/vincenth520/pinche_xcx/wiki/%E6%8B%BC%E8%BD%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%A0%E9%9C%80%E5%90%8E%E5%8F%B0%E7%9A%84%E6%90%AD%E5%BB%BA%E7%A4%BA%E4%BE%8B)
+- [关于配置同城拼车微信小程序后端](https://github.com/vincenth520/pinche_xcx_data/wiki/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AE%E5%90%8C%E5%9F%8E%E6%8B%BC%E8%BD%A6%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E7%AB%AF)
+
 
 
 

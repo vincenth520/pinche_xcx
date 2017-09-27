@@ -19,7 +19,7 @@ function formatNumber(n) {
 var rootDocment = 'https://xcx.codems.cn/api/';
   
 //修改成你的appid及appsecret
-var AppConf = {'appid':'wx0aa456241abc9e8e', 'appsecret':'76b24dc34ae91aa5fe89b7dc4413e981'};
+var AppConf = { 'appid': 'wx61f7708fbb157848', 'appsecret':'57556a858121fae443f59863f9cb1cdb'};
 
 function req(url, data, cb) {
   data.appid = AppConf.appid;
