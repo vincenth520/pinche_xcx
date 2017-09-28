@@ -41,6 +41,10 @@
 
 (点击链接加入群【微信小程序开发交流】：https://jq.qq.com/?_wv=1027&k=4Em0dwJ)
 
+
+[捐赠支持付费计划](https://github.com/vincenth520/pinche_xcx/blob/master/donate.md)
+
+
 - email[[1091986039@qq.com](mailto:1091986039@qq.com)]
 - qq[1091986039]
 - wechat[1091986039]
