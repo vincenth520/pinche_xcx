@@ -80,6 +80,11 @@
         <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
    </tr>
    <tr>
+        <td>广告投放</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
         <td>...</td> 
         <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
         <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
