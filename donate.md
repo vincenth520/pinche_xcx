@@ -6,11 +6,86 @@
 ## 目的
 支持程序的后期开发,以及服务器的调试,及人工开发成本
 
-## 价格
-￥399
+## 版本对比
+<table>
+    <tr>
+        <td>版本类型</td> 
+        <td>免费版本</td>  
+       <td>付费版本</td> 
+   </tr> 
+<tr>
+        <td> 授权与服务价格(人民币)</td> 
+        <td> - </td> 
+        <td>￥599</td> 
+   </tr>
+ <tr>
+        <td>免费升级期限</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td>无期限</td> 
+   </tr>
+ <tr>
+        <td>技术支持期限</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td>一年</td> 
+   </tr>
+ <tr>
+        <td>提供商业授权</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr style="background:#cfeffa">
+        <td colspan="3"><b>版本区别</b></td>    
+   </tr>
+   <tr>
+        <td>后端框架</td> 
+        <td>thinkphp3.2</td> 
+        <td>laravel5.5</td> 
+   </tr>
+   <tr>
+        <td>后台管理</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>车主认证</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>手机认证</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>...</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr style="background:#cfeffa">
+        <td colspan="3"><b></b></td>    
+   </tr>
+   <tr>
+        <td>二次开发技术咨询</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>系统故障排除</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>代安装、升级服务</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> 付费安装 </td> 
+   </tr>
+   <tr>
+        <td>运行环境优化 </td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> 付费优化 </td> 
+   </tr>
+</table>
 
-## 同城拼车后续计划
-免费版本除重大bug不再更新，付费版本将持续完善前端，并后续开发后台管理平台
 
 
 ## 付款通道
