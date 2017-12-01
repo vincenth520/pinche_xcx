@@ -34,6 +34,29 @@
         <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
    </tr>
    <tr style="background:#cfeffa">
+        <td colspan="3"><b></b></td>    
+   </tr>
+   <tr>
+        <td>二次开发技术咨询</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>系统故障排除</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
+   </tr>
+   <tr>
+        <td>代安装、升级服务</td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> 付费安装 </td> 
+   </tr>
+   <tr>
+        <td>运行环境优化 </td> 
+        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
+        <td> 付费优化 </td> 
+   </tr>
+   <tr style="background:#cfeffa">
         <td colspan="3"><b>版本区别</b></td>    
    </tr>
    <tr>
@@ -60,29 +83,6 @@
         <td>...</td> 
         <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
         <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
-   </tr>
-   <tr style="background:#cfeffa">
-        <td colspan="3"><b></b></td>    
-   </tr>
-   <tr>
-        <td>二次开发技术咨询</td> 
-        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
-        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
-   </tr>
-   <tr>
-        <td>系统故障排除</td> 
-        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
-        <td> <img src="http://www.naipan.com/images/bluego.gif"> </td> 
-   </tr>
-   <tr>
-        <td>代安装、升级服务</td> 
-        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
-        <td> 付费安装 </td> 
-   </tr>
-   <tr>
-        <td>运行环境优化 </td> 
-        <td> <img src="http://www.naipan.com/images/redch.gif"> </td> 
-        <td> 付费优化 </td> 
    </tr>
 </table>
 
