@@ -99,6 +99,12 @@
 |:----------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
 | [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://paypal.me/vincenth520) | ![alipay](http://pic.96weixin.com/upload/image2/vip/398001/1707/1707141710.png) | ![wechat](http://pic.96weixin.com/upload/image2/vip/398001/1707/1707144925.png) |
 
+## 付费项目地址
+
+- 前端：[https://github.com/vincenth520/pinche_xcx_vip](https://github.com/vincenth520/pinche_xcx_vip)
+- 后端：[https://github.com/vincenth520/pinche_xcx_data_vip](https://github.com/vincenth520/pinche_xcx_vip)
+
+
 ## 联系
 - email[[1091986039@qq.com](mailto:1091986039@qq.com)]
 - qq[1091986039]
