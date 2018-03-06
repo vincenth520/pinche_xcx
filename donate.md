@@ -20,40 +20,40 @@
    </tr>
  <tr>
         <td>免费升级期限</td> 
-        <td> √ </td> 
+        <td> × </td> 
         <td>无期限</td> 
    </tr>
  <tr>
         <td>技术支持期限</td> 
-        <td> √ </td> 
+        <td> × </td> 
         <td>一年</td> 
    </tr>
  <tr>
         <td>提供商业授权</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr style="background:#cfeffa">
         <td colspan="3"><b></b></td>    
    </tr>
    <tr>
         <td>二次开发技术咨询</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>系统故障排除</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>代安装、升级服务</td> 
-        <td> √ </td> 
+        <td> × </td> 
         <td> 付费安装 </td> 
    </tr>
    <tr>
         <td>运行环境优化 </td> 
-        <td> √ </td> 
+        <td> × </td> 
         <td> 付费优化 </td> 
    </tr>
    <tr style="background:#cfeffa">
@@ -66,28 +66,28 @@
    </tr>
    <tr>
         <td>后台管理</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>车主认证</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>手机认证</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>广告投放</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
    <tr>
         <td>...</td> 
-        <td> √ </td> 
         <td> × </td> 
+        <td> √ </td> 
    </tr>
 </table>
 
