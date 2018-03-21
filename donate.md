@@ -102,7 +102,7 @@
 ## 付费项目地址
 
 - 前端：[https://github.com/vincenth520/pinche_xcx_vip](https://github.com/vincenth520/pinche_xcx_vip)
-- 后端：[https://github.com/vincenth520/pinche_xcx_data_vip](https://github.com/vincenth520/pinche_xcx_vip)
+- 后端：[https://github.com/vincenth520/pinche_xcx_data_vip](https://github.com/vincenth520/pinche_xcx_data_vip)
 
 
 ## 联系
