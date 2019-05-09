@@ -53,8 +53,6 @@ var AppConf = { 'appid': 'wx0aa456241abc9e8e', 'appsecret':'cb10ea69158ef5c786c9
 ## 有问题
 你可以用以下联系方式找到我(`不接受问问题,有问题请直接提交`[issue](https://github.com/vincenth520/pinche_xcx/issues))
 
-(点击链接加入群【微信小程序开发交流】：https://jq.qq.com/?_wv=1027&k=4Em0dwJ)
-
 
 [捐赠支持付费计划](https://github.com/vincenth520/pinche_xcx/blob/master/donate.md)
 
