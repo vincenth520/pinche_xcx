@@ -17,9 +17,14 @@ function formatNumber(n) {
 
   
 var rootDocment = 'https://xcx.codems.cn/api/';
-  
+
+var wxAppinfo = {
+  'name': '同城拼车',
+  'logo': 'https://wx.qlogo.cn/mmhead/Q3auHgzwzM41GbicIwic6JOHzehVqd3OubV4GmEQA67KRXyoZ3Y6maHg/0'
+};
+
 //修改成你的appid及appsecret
-var AppConf = { 'appid': 'wx61f7708fbb157848', 'appsecret':'57556a858121fae443f59863f9cb1cdb'};
+var AppConf = { 'appid': 'wx0aa456241abc9e8e', 'appsecret':'cb10ea69158ef5c786c9e39cf6ea478f'};
 
 function req(url, data, cb) {
   data.appid = AppConf.appid;
@@ -159,6 +164,7 @@ module.exports = {
   clearError: clearError,  
   getReq: getReq,
   getDateDiff:getDateDiff,
-  escape2Html:escape2Html,
+  escape2Html: escape2Html,
+  wxAppinfo: wxAppinfo,
   getDateBiff:getDateBiff
 }  

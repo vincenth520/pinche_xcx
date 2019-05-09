@@ -1,0 +1,13 @@
+<view id="main" v-if="!login">
+  <view id="head">
+    <image src='{{appInfo.logo}}'></image>
+  </view>
+  <view id="title">
+    <view class='text-align'><text>{{appInfo.name}}</text></view>
+    <view class='text-align'><text>欢迎您</text></view>
+  </view>
+  <view class='text-align gray font3'><text>请微信授权登录后放心使用{{appInfo.name}}</text></view>
+  <view class='text-align gray font3'><text>您的信息和数据将得到保护</text></view>
+</view>
+
+<button class='loginbutton font4' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> <image src="/img/wechat.png" class='icon'></image>   微信授权登录</button>

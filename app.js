@@ -45,34 +45,19 @@ App({
   },
 
   login:function(){
-    var that = this;
-    wx.login({
-      success: function (res) {
-        wx.getUserInfo({
-          success: function(userinfo){
-            util.req('user/login', {
-              "code": res.code,
-              "encryptedData": userinfo.encryptedData,
-              "iv": userinfo.iv
-               }, function (data) {
-                 that.setUserInfo(data.user);
-                 that.setSk(data.sk);
-            })
-          },
-          fail: function(res) {
-            that.loginFail();
-          }
-        })
-      }
+
+    wx.reLaunch({
+      url: '/pages/toLogin/toLogin'
     })
+    
   } ,
 
   loginFail: function () {
     var that = this;
-    wx.showModal({
-        content: '登录失败，请允许获取用户信息,如不显示请删除小程序重新进入',
-        showCancel: false
-    });
+    // wx.showModal({
+    //     content: '登录失败，请允许获取用户信息,如不显示请删除小程序重新进入',
+    //     showCancel: false
+    // });
     that.login();
   },
   setUserInfo:function(data){   //将用户信息缓存保存
