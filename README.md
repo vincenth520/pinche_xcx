@@ -28,6 +28,19 @@
 
 
 ## 使用教程
+1.修改utils/utils.js
+```
+var wxAppinfo = {
+  'name': '同城拼车', //登录页标题
+  'logo': 'https://wx.qlogo.cn/mmhead/Q3auHgzwzM41GbicIwic6JOHzehVqd3OubV4GmEQA67KRXyoZ3Y6maHg/0' //登录页logo
+};
+
+//修改成你的appid及appsecret
+var AppConf = { 'appid': 'wx0aa456241abc9e8e', 'appsecret':'cb10ea69158ef5c786c9e39cf6ea478f'};
+
+```
+
+
 
 - [拼车小程序无需后台的搭建示例](https://github.com/vincenth520/pinche_xcx/wiki/%E6%8B%BC%E8%BD%A6%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%97%A0%E9%9C%80%E5%90%8E%E5%8F%B0%E7%9A%84%E6%90%AD%E5%BB%BA%E7%A4%BA%E4%BE%8B)
 - [关于配置同城拼车微信小程序后端](https://github.com/vincenth520/pinche_xcx_data/wiki/%E5%85%B3%E4%BA%8E%E9%85%8D%E7%BD%AE%E5%90%8C%E5%9F%8E%E6%8B%BC%E8%BD%A6%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%8E%E7%AB%AF)
