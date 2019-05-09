@@ -28,7 +28,7 @@
 
 
 ## 使用教程
-1.修改utils/utils.js
+修改utils/utils.js
 ```
 var wxAppinfo = {
   'name': '同城拼车', //登录页标题
