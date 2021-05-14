@@ -15,8 +15,9 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n  
 }  
 
-  
-var rootDocment = 'https://xcx.codems.cn/api/';
+const baseURL = 'http://pinche.com/';
+
+var rootDocment = baseURL+'api/';
 
 var wxAppinfo = {
   'name': '同城拼车',
@@ -166,5 +167,6 @@ module.exports = {
   getDateDiff:getDateDiff,
   escape2Html: escape2Html,
   wxAppinfo: wxAppinfo,
-  getDateBiff:getDateBiff
+  getDateBiff:getDateBiff,
+  baseURL:baseURL
 }  

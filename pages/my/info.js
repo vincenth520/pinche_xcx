@@ -95,7 +95,7 @@ Page({
       success: function(res) {
         var tempFilePaths = res.tempFilePaths
         wx.uploadFile({
-          url: 'https://xcx.codems.cn/api/upload', 
+          url: util.baseURL + 'api/upload', 
           filePath: tempFilePaths[0],
           name: 'file',
           formData:{
@@ -135,7 +135,7 @@ Page({
       'userInfo.phone':e.detail.value.phone
     })
     wx.request({
-      url: 'https://xcx.codems.cn/api/user/editUser',
+      url: util.baseURL + 'api/user/editUser', 
       data: {
         'userInfo':that.data.userInfo,
         'sk':app.globalData.sk
