@@ -18,8 +18,8 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": false,
     "useApiHostProcess": false,
     "babelSetting": {
       "ignore": [],
@@ -27,7 +27,6 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -37,7 +36,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "1.9.91",
+  "libVersion": "2.17.0",
   "appid": "wxdb39708ea70f0e42",
   "projectname": "pinxhe_xcx",
   "isGameTourist": false,

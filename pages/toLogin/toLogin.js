@@ -9,29 +9,34 @@ Page({
   onLoad: function (options) {
     var that = this;
     var vdata = {};
-    wx.getSetting({
-      success: function (res) {
-        if (res.authSetting['scope.userInfo']) {
-          wx.redirectTo({
-            url: '/pages/index/index',
-          })
-        }
-        return false;
-      }
-    })
+    // wx.getSetting({
+    //   success: function (res) {
+    //     console.log(res)
+    //     if (res.authSetting['scope.userInfo']) {
+    //       wx.switchTab({
+    //         url: '/pages/index/index',
+    //       })
+    //     }
+    //     return false;
+    //   }
+    // })
 
     that.setData({
       appInfo: util.wxAppinfo
     });
 
   },
-  bindGetUserInfo: function (e) {
+  getUserProfile: function (e) {
     var that = this;
     var userinfo = e.detail;
-    wx.login({
-      success: function (res) {
-        wx.getUserInfo({
-          success: function (userinfo) {
+    console.log('sss')
+    wx.getUserProfile({
+      lang: 'en',
+      desc: '用于完善会员资料',
+      success: function (userinfo) {
+        console.log(userinfo)
+        wx.login({
+          success: function (res) {
             util.req('user/login', {
               "code": res.code,
               "encryptedData": userinfo.encryptedData,
@@ -43,11 +48,12 @@ Page({
                 url: '/pages/index/index',
               })
             })
-          },
-          fail: function (res) {
-            // that.loginFail();
           }
         })
+      },
+      fail: function (res) {
+        console.log(res)
+        // that.loginFail();
       }
     })
   }
