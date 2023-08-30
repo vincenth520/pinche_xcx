@@ -54,9 +54,6 @@ var AppConf = { 'appid': 'wx0aa456241abc9e8e', 'appsecret':'cb10ea69158ef5c786c9
 你可以用以下联系方式找到我(`不接受问问题,有问题请直接提交`[issue](https://github.com/vincenth520/pinche_xcx/issues))
 
 
-[捐赠支持付费计划](https://github.com/vincenth520/pinche_xcx/blob/master/donate.md)
-
-
 - email[[1091986039@qq.com](mailto:1091986039@qq.com)]
 - qq[1091986039]
 - wechat[1091986039]
